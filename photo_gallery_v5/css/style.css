@@ -1,0 +1,65 @@
+.container, .gallery {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    }
+
+    form {
+	margin-bottom: 20px;
+    }
+
+    input {
+    height: 40px;
+    width: 330px;
+    margin-top: 20px;
+    border-color: lightgrey;
+    border-radius: 7px;
+    text-indent: 5px;
+    }
+
+    @media (min-width:768px) {
+	.gallery {
+	display: grid;
+	grid-template-columns: repeat(2, [col] auto);
+	column-gap: 10px;
+	row-gap: 10px;
+	}
+
+	form {
+	    margin-bottom: 20px;
+	}
+
+	input {
+	height: 40px;
+	width: 455px;
+	margin-top: 20px;
+	border-color: lightgrey;
+	border-radius: 7px;
+	text-indent: 5px;
+	}
+
+    }
+
+    @media (min-width:1024px) {
+
+	    .gallery {
+	    display: grid;
+	    grid-template-columns: repeat(4, [col] auto ) ;
+	    column-gap: 10px;
+	    row-gap: 10px;
+	    }
+
+	    form {
+		margin-top: 10px;
+		margin-bottom: 20px;
+	    }
+
+	    input {
+	    height: 40px;
+	    width: 655px;
+	    margin-top: 20px;
+	    border-color: lightgrey;
+	    border-radius: 7px;
+	    text-indent: 5px;
+	    }
+    }
